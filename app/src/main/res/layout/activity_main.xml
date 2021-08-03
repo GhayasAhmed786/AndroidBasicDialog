@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Example of simple Dialog in android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="40dp"
+        android:scrollingCache="true"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        android:id="@+id/nested_scroll_view">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="?selectableItemBackground"
+        android:id="@+id/confirm_dialog"
+        android:onClick="clickAction"
+        android:text="CONFIRMATION DIALOG"
+        android:minHeight="?actionBarSize"
+        android:paddingRight="@dimen/spacing_large"
+        android:paddingLeft="@dimen/spacing_large"
+        android:gravity="center|left"
+        android:textColor="@color/grey_60"/>
+
+    <View android:layout_height="1.0dip" android:layout_width="fill_parent" android:background="@android:color/darker_gray"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="?selectableItemBackground" android:id="@+id/alert_dialog" android:onClick="clickAction" android:text="ALERT DIALOG" android:minHeight="?actionBarSize" android:paddingRight="@dimen/spacing_large" android:paddingLeft="@dimen/spacing_large" android:gravity="center|left" android:textColor="@color/grey_60"/>
+
+    <View android:layout_height="1.0dip" android:layout_width="fill_parent" android:background="@android:color/darker_gray"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="?selectableItemBackground" android:id="@+id/single_choice_dialog" android:onClick="clickAction" android:text="SINGLE CHOICE DIALOG" android:minHeight="?actionBarSize" android:paddingRight="@dimen/spacing_large" android:paddingLeft="@dimen/spacing_large" android:gravity="center|left" android:textColor="@color/grey_60"/>
+
+    <View android:layout_height="1.0dip" android:layout_width="fill_parent" android:background="@android:color/darker_gray"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="?selectableItemBackground" android:id="@+id/multi_choice_dialog" android:onClick="clickAction" android:text="MULTIPLE CHOICE DIALOG" android:minHeight="?actionBarSize" android:paddingRight="@dimen/spacing_large" android:paddingLeft="@dimen/spacing_large" android:gravity="center|left" android:textColor="@color/grey_60"/>
+
+    <View android:layout_height="1.0dip" android:layout_width="fill_parent" android:background="@android:color/darker_gray"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/hintaboutlogo"/>
+
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
